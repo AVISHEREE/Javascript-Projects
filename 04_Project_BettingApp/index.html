@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting App</title>
+    <link rel="stylesheet" href="BettingApp.css">
+</head>
+<body>
+    <!-- betting in js -->
+    
+     <h3 id="Wallet">Wallet:</h3>
+    <h2>Share Your Opinion and win money</h2>
+    <hr>
+    <div class="bet1">
+        <h4 id="betText"> Punjab to win match against delhi? </h4>
+        <button onclick="yes(this)">Yes 10$</button>
+        <button onclick="no(this)">No 10$</button>
+    </div>
+    <hr>
+       <div class="bet2">
+        <h4 id="betText"> Is our next PM will be rahul Gandhi?</h4>
+        <button onclick="yes(this)">Yes 10$</button>
+        <button onclick="no(this)">No 10$</button>
+    </div>
+    <hr>
+       <div class="bet3">
+        <h4 id="betText"> will Arjun Kapoor Nxt movie be Blockbuster?</h4>
+        <button onclick="yes(this)">Yes 10$</button>
+        <button onclick="no(this)">No 10$</button>
+    </div>
+    <hr>
+    <div class="totalMoneyContainer"  style="display: none;">
+        <button onclick="show()" > <a>Home Page</a> </button> 
+        <h5>Total Money</h5>
+        <h3 id="totalMoney"></h3>
+    <div>
+        <hr>
+        <h5>Total Earning</h5>
+        <h3 class="totalEarning">$</h3>
+    </div>
+    <div>
+        <h5>Total Loss</h5>
+        <h3 class="totalLoss">$</h3>
+    </div>
+</div>
+    <script src="BettingApp.js"></script>
+    
+</body>
+</html>

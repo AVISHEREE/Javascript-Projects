@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finance web</title>
+</head>
+<body>
+    <div class="incomInputClass">
+        <input type="text" placeholder="enter your montly income" class="incomeInput">
+        <button onclick="calculation()">submit</button>
+    </div>
+    
+    <div class="expensesInputClass" style="display: none;">
+    <p>enter your expenses</p>
+    <input type="text" name="" placeholder="enter amount" class="expensesAmount">
+    <input type="text" name="" placeholder="enter purpose" class="expensesType">
+    <button onclick="expensesAdd()">submit</button>
+    <p class="errorInput"></p>
+    </div>
+    <br>
+    <div class="expensesDisplay">
+        
+    </div>
+   <script src="index.js"></script> 
+</body>
+</html>

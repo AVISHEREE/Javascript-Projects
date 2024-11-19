@@ -1,5 +1,105 @@
-#listHolder{
+/* ToDoList.css */
+
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #9796f0, #fbc7d4);
+    color: #fff;
     display: flex;
-    gap: 10px;
-    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title Styling */
+h4 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Form Container */
+form {
+    width: 80%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Styling */
+#addListTitle {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+}
+
+
+/* Button Styling */
+#submitBtn {
+    width: 100%;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitBtn:hover {
+    background-color: #218838;
+}
+
+
+#list {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+#listHolder{
+    border: 2px solid rgb(104, 103, 103);
+    padding: 15px;
+    border-radius: 21px;
+    margin-bottom: 5px;
+}
+
+#listHolder input{
+    height: 18px;
+    width: 18px;
+}
+
+#list li {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+#msg {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #ffdddd;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: none; /* Hide by default */
 }

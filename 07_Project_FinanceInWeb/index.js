@@ -33,18 +33,24 @@ let expensesAdd = () => {
         errorInput.textContent = "please enter numbers";
     }
     else {
-        let temp = incomeInput.value;
-        let savings = temp;
-        let amount = expensesAmount.value;
-        let type = expensesType.value;
-        expensesDisplay.innerHTML += `<h3>${a}] ${amount} : ${type} </h3>`;
-        a += 1;
-        expensesAmount.value = '';
-        expensesType.value = '';
-        savings -= amount;
-        errorInput.textContent = `in your wallet ${savings}`;
-         incomeInput.value = savings;                 
-    } 
+        let wallet = parseFloat(incomeInput.value); // Current wallet balance
+        let amount = parseFloat(expensesAmount.value); // Expense amount
+        
+        if (wallet <= 0) {
+            errorInput.textContent = "You have no money left in your wallet.";
+        } else if (amount > wallet) {
+            errorInput.textContent = "You cannot spend more than you have in your wallet.";
+        } else {
+            let type = expensesType.value;
+            expensesDisplay.innerHTML += `<h3>${a}] ${amount} : ${type}</h3>`;
+            a += 1;
+            incomeInput.value = wallet - amount; // Update wallet balance
+            errorInput.textContent = `In your wallet: ${incomeInput.value}`;
+            expensesAmount.value = '';
+            expensesType.value = '';
+        }
+    }
+
 
 };
 

@@ -5,7 +5,10 @@ let options = ["rock", "paper", "scissors"];
 
 let randomgenerate = Math.floor(Math.random() * 3);
 
-let rock = () => {
+let rock = (e) => {
+    e.parentElement.querySelectorAll("button").forEach(btn => btn.style.display = "none");
+    result.style.display = "block";
+    refresh.style.display = "block";
     if (options[randomgenerate] == "rock") {
         result.innerText = "match tie";
     }
@@ -16,10 +19,12 @@ let rock = () => {
         result.innerText = " you lose";
     }
     computerChoice.innerText = options[randomgenerate];
-    refresh.innerHTML = `<a href="index.html">replay</a>`;
 };
 
-let paper = () => {
+let paper = (e) => {
+    e.parentElement.querySelectorAll("button").forEach(btn => btn.style.display = "none");
+    result.style.display = "block";
+    refresh.style.display = "block";
     if (options[randomgenerate] == "rock") {
         result.innerText = "you lose";
     }
@@ -30,11 +35,13 @@ let paper = () => {
         result.innerText = " you win";
     }
     computerChoice.innerText = options[randomgenerate];
-    refresh.innerHTML = `<a href="index.html">replay</a>`;
 };
 
 
-let scissors = () => {
+let scissors = (e) => {
+    e.parentElement.querySelectorAll("button").forEach(btn => btn.style.display = "none");
+    result.style.display = "block";
+    refresh.style.display = "block";
     if (options[randomgenerate] == "rock") {
         result.innerText = "you lose";
     }
@@ -45,6 +52,9 @@ let scissors = () => {
         result.innerText = "match tie";
     }
     computerChoice.innerText = options[randomgenerate];
-    refresh.innerHTML = `<a href="index.html">replay</a>`;
 };
+
+function refreshGame() {
+    location.reload(); // Reloads the page
+}
 

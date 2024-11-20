@@ -1,0 +1,85 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #2d3dd4, #16d9e3);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+h3, p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #f9f871;
+}
+
+/* Buttons styling */
+button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: #ff4b2b;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #ff9068;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+#result{
+    display: none;
+}
+#refresh{
+    display: none;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Computer choice and result styling */
+#computerChoice, #result {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#computerChoice {
+    color: #16e3d6;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#refresh {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #ffcc00;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

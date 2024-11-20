@@ -1,0 +1,131 @@
+/* Notes.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #2193b0, #6dd5ed);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h4 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-shadow: 1px 1px 5px rgba(215, 215, 215, 0.4);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+#msg {
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgba(255, 69, 58, 0.8);
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: none;
+}
+
+#inputNoteTittle {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#inputNoteTittle:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: #fff;
+}
+
+#submit {
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submit:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.notesContainer {
+    width: 70%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 50vh;
+}
+
+.notesContainer::-webkit-scrollbar {
+    width: 10px;
+}
+
+.notesContainer::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 10px;
+}
+
+.notesContainer::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+
+/* Updated textarea styling */
+
+textarea.text {
+    width: 90%;
+    max-width: 90%;
+    min-height: 120px;
+    padding: 12px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+textarea.text:focus {
+    border-color: #007bff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: #fff;
+}

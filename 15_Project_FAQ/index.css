@@ -1,0 +1,52 @@
+body{
+    background: url(https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg) no-repeat center center/ cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordian{
+    width: 45%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 21px;
+}
+.accordian .accordianTitle{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.accordian .contentContainer .quetion{
+    padding: 18px 0px;
+    font-size: 1.4em;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    position: relative;
+}
+
+.accordian .contentContainer .quetion::after{
+    content: "+";
+    position: absolute;
+    right: -7px;
+}
+
+.accordian .contentContainer .answer{
+    padding-top: 15px;
+    font-size: 15px;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.accordian .active .answer{
+    height: 100px;
+}
+
+.accordian .active .quetion::after{
+    content: "-";
+    font-size: 30px;
+    transition: 0.5s;
+}

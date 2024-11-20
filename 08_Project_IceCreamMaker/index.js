@@ -73,8 +73,7 @@ let wait2 =() => (wait("small cone","medium cone","big cone","cup"))
 let wait3 =() => (wait("stick","candy","melted chocolate","kuch bhi"))
 
 let iceCreamMaking = () =>{
-    orderProceder.textContent = "";
-    servingIceCream.textContent = "thankyou for your order we'll deliver it soon";
+    orderProceder.textContent = "thankyou for your order we'll deliver it soon";
 };
 
 orderingIceCream();

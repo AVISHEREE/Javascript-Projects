@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array</title>
+    <link rel="stylesheet" href="SortedArray.css">
+    <title>Array sorter</title>
 </head>
+<nav class="backBtn" style="position: fixed;left: 40px; top: 10px; padding: 10px 15px; background-color: #313131; text-decoration: none; border-radius:30px; font-size: 18px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <a href="../index.html" style=" color: white; text-decoration: none;"><img src="../ProjectImages/back-square-svgrepo-com.svg" style="position: relative; padding-top: 0px; top: 2px;" height="18px" alt=""> Home</a>
+</nav>
 <body>
     <input style="width: 16rem;" type="text" id="InputElements" placeholder="enter elements to sort seperated by spaces">
-    <button style="width: 4rem;" onclick="sort()">Sort</button>
-    <h2 id="hello"></h2>
+    <button style="width: 4rem;" id="sortElementsBtn" onclick="sort()">Sort</button>
+    <h2 id="outputElements"></h2>
     <script src="SortedArray.js"></script>
 </body>
 </html>

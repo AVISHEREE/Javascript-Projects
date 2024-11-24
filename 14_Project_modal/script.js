@@ -3,7 +3,7 @@ let modalContainer = document.querySelector(".modalContainer");
 let closeBtn = document.getElementById("closeBtn");
 
 openBtn.addEventListener("click",function(){
-    modalContainer.style.display = "block";
+    modalContainer.style.display = "flex";
 
 })
 

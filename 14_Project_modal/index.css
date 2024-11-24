@@ -1,72 +1,70 @@
-body{
-    background-color: rgb(22, 140, 190);
-    height: 100vh;
-    position: relative;
-}
+/* index.css */
 
-#openBtn{
-    position: absolute;
-    top: 70%;
-    left: 10%;
-    width: 350px;
-    height: 80px;
-    font-size: 2em;
-    background: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-    border-radius: 7px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .5s;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-#openBtn:hover{
-    background-color: white;
-    color: black;
-}
-
-.modal{
-    background-color: #fff;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 150px;
-    height: 80px;
+button {
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
     padding: 10px 20px;
-    font-size: 1.5em;
-    border-radius: 7px;
-    display: flex;
-    justify-content: space-between;
-    animation-name: animationModal;
-    animation-duration: .7s ;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.modalContainer{
-    display: none;
+button:hover {
+    background-color: #0056b3;
+}
+
+.modalContainer {
+    display: none; /* Hidden by default */
     position: fixed;
-    border: 2px solid;
-    top: 0 ;
-    left: 0  ;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    /* z-index: 1000; */
 }
 
-#closeBtn{
-    background: transparent;
+.modal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.modal p {
+    margin: 0 0 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
     border: none;
-    font-size: 1.5em;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
 }
 
-@keyframes animationModal{
-    from{
-        top:-30px;
-        opacity: 0;
-    }
-    to{
-        top: 370px;
-        opacity: 1;
-    }
+#closeBtn:hover {
+    color: #ff0000;
 }

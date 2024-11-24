@@ -1,4 +1,4 @@
-hello = document.getElementById('hello');
+outputElements = document.getElementById('outputElements');
 InputElements = document.getElementById('InputElements');
 let array = [20,10,11,80,3,2,89,1,0,];
 
@@ -18,7 +18,7 @@ function sorter(numbers){
 }
 function sort(){
     array = InputElements.value.split(" ").map(Number);
-    hello.innerHTML = `Sorted Array: ${sorter(array).join(", ")}`;
+    outputElements.innerHTML = `Sorted Array: ${sorter(array).join(", ")}`;
 }
 
 // hello.innerHTML = `${sorter(array)}`;

@@ -6,14 +6,17 @@
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="index.css">
 </head>
+<nav class="backBtn" style="position: fixed;left: 40px; top: 10px; padding: 10px 15px; background-color: #313131; text-decoration: none; border-radius:30px; font-size: 18px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <a href="../index.html" style=" color: white; text-decoration: none;"><img src="../ProjectImages/back-square-svgrepo-com.svg" style="position: relative; padding-top: 0px; top: 2px;" height="18px" alt=""> Home</a>
+</nav>
 <body>
     <h1>Rock Paper Scissors Game</h1>
     <h3>Please select your choice</h3>
     <h2 id="result"></h2>
     <h4 id="refresh" onclick="refreshGame()">🔄 Refresh Game</h4>
-    <button onclick="rock(this)">ROCK</button>
-    <button onclick="paper(this)">PAPER</button>
-    <button onclick="scissors(this)">SCISSORS</button>
+    <button onclick="rock(this)">🪨ROCK</button>
+    <button onclick="paper(this)">🗞️PAPER</button>
+    <button onclick="scissors(this)">✂️SCISSORS</button>
     <br><br>
     <p>Computer Choice:</p>
     <h3 id="computerChoice"></h3>

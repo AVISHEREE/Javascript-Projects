@@ -10,13 +10,13 @@ let rock = (e) => {
     result.style.display = "block";
     refresh.style.display = "block";
     if (options[randomgenerate] == "rock") {
-        result.innerText = "match tie";
+        result.innerText = "🙃match tie";
     }
     else if (options[randomgenerate] == "paper") {
-        result.innerText = " you win";
+        result.innerText = "🙌 You Win";
     }
     else {
-        result.innerText = " you lose";
+        result.innerText = "🤞Better luck next time";
     }
     computerChoice.innerText = options[randomgenerate];
 };
@@ -26,13 +26,13 @@ let paper = (e) => {
     result.style.display = "block";
     refresh.style.display = "block";
     if (options[randomgenerate] == "rock") {
-        result.innerText = "you lose";
+        result.innerText = "🙃match tie";
     }
     else if (options[randomgenerate] == "paper") {
-        result.innerText = " match tie";
+        result.innerText = "🙌 You Win";
     }
     else {
-        result.innerText = " you win";
+        result.innerText = "🤞Better luck next time";
     }
     computerChoice.innerText = options[randomgenerate];
 };
@@ -43,13 +43,13 @@ let scissors = (e) => {
     result.style.display = "block";
     refresh.style.display = "block";
     if (options[randomgenerate] == "rock") {
-        result.innerText = "you lose";
+        result.innerText = "🙃match tie";
     }
     else if (options[randomgenerate] == "paper") {
-        result.innerText = " you win";
+        result.innerText = "🙌 You Win";
     }
     else {
-        result.innerText = "match tie";
+        result.innerText = "🤞Better luck next time";
     }
     computerChoice.innerText = options[randomgenerate];
 };
